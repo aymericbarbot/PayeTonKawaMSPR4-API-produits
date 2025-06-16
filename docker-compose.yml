@@ -1,0 +1,9 @@
+services:
+  client-service:
+    build: .
+    container_name: produits-service-container
+    ports:
+      - "3007:3000"
+    # volumes:
+    #   - ./:/app
+    command: npm run start
