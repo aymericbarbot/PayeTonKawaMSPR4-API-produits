@@ -13,7 +13,7 @@ Se placer dans le répertoire du projet, lancer les conteneurs:
 
 docker-compose up --build
 
-(Le service client est exposé sur le port 3007)
+(Le service produit est exposé sur le port 3007)
 
 Pour arrêter les conteneurs:
 
