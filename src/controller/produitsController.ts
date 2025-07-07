@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import Produit from '../models/produitModel';
-import { validateProduitData } from '../utils/validateProduitData.ts';
+import { validateProduitData } from '../utils/validateProduitData';
 
 export const getAllProduits = async (_req: Request, res: Response) => {
   try {
