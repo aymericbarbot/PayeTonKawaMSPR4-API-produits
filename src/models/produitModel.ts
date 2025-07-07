@@ -35,16 +35,12 @@ Produit.init({
     validate: {
         min: 0
     }
-  },
-  date_creation: {
-    type: DataTypes.DATE,
-    defaultValue: DataTypes.NOW
   }
 }, {
   sequelize,
   modelName: 'Produit',
   tableName: 'produits',
-  timestamps: false
+  timestamps: true
 });
 
 export default Produit;
