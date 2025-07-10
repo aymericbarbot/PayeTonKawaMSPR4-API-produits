@@ -5,12 +5,12 @@ services:
       - "${PRODUIT_PORT}:3000"
     command: npm run start
     depends_on:
-      service-bdd-mysql:
+      service-bdd-produit-mysql:
         condition: service_healthy
     env_file:
       - .env
 
-  service-bdd-mysql:
+  service-bdd-produit-mysql:
     image: mysql:8.0
     container_name: bdd-produit-mysql
     restart: always
