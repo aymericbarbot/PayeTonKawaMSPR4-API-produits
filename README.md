@@ -33,3 +33,18 @@ npm run build
 
 npm run dev
 npm run start
+
+# Test
+## Installation de Jest
+npm install --save-dev jest ts-jest @types/jest typescript
+npx ts-jest config:init
+## Test Untaires
+### Lancer les tests
+npx jest
+## Test Intégration
+### Installation supertest
+npm install --save-dev supertest
+npm install --save-dev @types/supertest
+
+### Lancer les tests
+npx jest
